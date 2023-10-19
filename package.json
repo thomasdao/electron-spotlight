@@ -1,11 +1,12 @@
 {
   "name": "electron-spotlight",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Add items to macOS Spotlight from Electron",
   "main": "index.js",
   "scripts": {
     "install": "node-gyp rebuild",
-    "build": "node-gyp build"
+    "build": "node-gyp build",
+    "prebuild": "prebuild -t 24.8.7 -t 26.4.1 --runtime electron --strip --verbose --upload-all"
   },
   "repository": {
     "type": "git",
@@ -20,10 +21,11 @@
   ],
   "author": "Charlie Hess",
   "devDependencies": {
-    "nan": "2.15.0",
-    "node-gyp": "9"
+    "nan": "^2.18.0",
+    "node-gyp": "^9"
   },
   "dependencies": {
-    "bindings": "1.3.0"
+    "bindings": "^1.5.0",
+    "prebuild": "^12.1.0"
   }
 }

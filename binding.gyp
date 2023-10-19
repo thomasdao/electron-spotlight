@@ -9,8 +9,9 @@
       "<!(node -e \"require('nan')\")"
     ],
     "xcode_settings": {
-      "OTHER_CPLUSPLUSFLAGS": ["-std=c++14", "-stdlib=libc++", "-mmacosx-version-min=10.13"],
-      "OTHER_LDFLAGS": ["-framework CoreFoundation -framework CoreSpotlight -framework AppKit"]
+      "OTHER_CPLUSPLUSFLAGS": ["-std=c++20", "-stdlib=libc++", "-mmacosx-version-min=10.13"],
+      "OTHER_LDFLAGS": ["-framework CoreFoundation -framework CoreSpotlight -framework AppKit"],
+      "CLANG_CXX_LANGUAGE_STANDARD": "c++20"
     }
   }]
 }
