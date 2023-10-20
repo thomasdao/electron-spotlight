@@ -1,11 +1,11 @@
 {
   "name": "electron-spotlight",
-  "version": "1.1.4",
+  "version": "1.1.6",
   "description": "Add items to macOS Spotlight from Electron",
   "main": "index.js",
   "scripts": {
     "install": "prebuild-install || node-gyp rebuild",
-    "prebuild": "prebuild -t 24.8.7 -t 26.4.1 --runtime electron --arch x64 --arch arm64 --strip --verbose --upload-all"
+    "prebuild": "prebuild -t 24.8.7 -t 26.4.1 --runtime electron --strip --verbose"
   },
   "repository": {
     "type": "git",
