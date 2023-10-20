@@ -21,3 +21,4 @@ yarn.lock
 .benchmarks/
 *.csv
 .DS_Store
+.prebuildrc
